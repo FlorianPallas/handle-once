@@ -1,6 +1,3 @@
-export * from './errors';
-export * from './replies';
-
 export class APIResponse<T> {
   public $type!: 'reply' | 'error';
   public statusCode!: number;
@@ -16,3 +13,6 @@ export class APIResponse<T> {
     this.data = args.data;
   }
 }
+
+export * from './errors';
+export * from './replies';
