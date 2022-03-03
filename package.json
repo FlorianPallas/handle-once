@@ -30,6 +30,7 @@
     "release": "standard-version"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
     "@types/node": "16.x.x",
     "jest": "^27.5.1",
