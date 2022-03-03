@@ -16,10 +16,14 @@ export interface BaseContext {
 export type BaseHandler<T, C = BaseContext> = (context: C) => BaseReply<T>;
 
 export const getHandler = <T = any>(handler: BaseHandler<T>) => handler;
+
 export const getMethodHandler: (handlers: {
   [key: string]: BaseHandler<any>;
 }) => BaseHandler<any> = (handlers) => (context) => {
-  const handler = handlers[context.method];
-  if (handler) return handler(context);
+  for (const key in handlers) {
+    if (key.toUpperCase() === context.method.toUpperCase()) {
+      return handlers[key](context);
+    }
+  }
   throw new MethodNotAllowedError();
 };
