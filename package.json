@@ -25,11 +25,18 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest",
+    "release": "standard-version"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "@types/node": "16.x.x",
+    "jest": "^27.5.1",
     "prettier": "^2.5.1",
+    "standard-version": "^9.3.2",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.6.0",
     "typescript": "^4.6.2"
   },
   "packageManager": "yarn@3.2.0"
