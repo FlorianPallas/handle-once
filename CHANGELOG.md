@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/FlorianPallas/handle-once/compare/v0.1.2...v0.1.3) (2022-03-06)
+
+
+### Bug Fixes
+
+* export next platform properly ([34f87db](https://github.com/FlorianPallas/handle-once/commit/34f87db8411b8e453394b12bf4e6c6458f220a96))
+
 ### [0.1.2](https://github.com/FlorianPallas/handle-once/compare/v0.1.1...v0.1.2) (2022-03-06)
 
 
