@@ -1,6 +1,6 @@
 {
   "name": "handle-once",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Write your handlers independent from your server - once!",
   "keywords": [
     "handle",
